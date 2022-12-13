@@ -1,6 +1,5 @@
 site_name: DIW-OnLine
-site_url:
+site_url: 
 nav:
    - Home: index.md
-   - About: about.md
 theme: readthedocs

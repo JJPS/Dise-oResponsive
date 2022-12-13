@@ -43,15 +43,11 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a>
+    <li class="toctree-l2"><a class="reference internal" href="#medidas-porcentuales">Medidas porcentuales</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
+    <li class="toctree-l2"><a class="reference internal" href="#media-queries">Media Queries</a>
     </li>
     </ul>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="" href="about.md">About</a>
                 </li>
               </ul>
       </div>
@@ -77,21 +73,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+                <h1 id="diseno-responsive">Diseño Responsive</h1>
+<p>El diseño responsive es un diseño web que se adapta a todos los dispositivos, ya sean ordenadores, tablets o teléfonos móviles. Es decir, que el diseño se ajusta a la pantalla en la que se está visualizando, ofreciendo una experiencia de usuario óptima en todos los dispositivos. </p>
+<p>Esto se consigue usando técnicas de diseño web como el uso de <strong>medidas porcentuales</strong> en lugar de píxeles para definir los tamaños de los elementos, y también mediante el uso de <strong>media queries</strong> para mostrar diferentes estilos dependiendo del tamaño de la pantalla.</p>
+<h2 id="medidas-porcentuales">Medidas porcentuales</h2>
+<p>Las medidas porcentuales en el diseño web se refieren al uso de unidades de medida referencial en lugar de unidades de medida fijas como píxeles para definir el tamaño de los elementos de una página web. Esto permite que los elementos se ajusten automáticamente al tamaño de la pantalla del usuario, lo que mejora la experiencia de usuario. Las unidades de medidas referencial también se pueden utilizar para definir los márgenes, los bordes y los espacios entre los elementos.</p>
+<p>Por ejemplo</p>
+<pre><code class="language-HTML">.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
 </code></pre>
+<p>Con estas 3 propiedades de CSS conseguimos que a) El elemento se centre en la página, b) tenga un ancho del 90% sobre el elemento que lo contiene y c) su ancho nunca sea superior a 1200 pixeles.</p>
+<p>Las tres unidades de medida porcentual que vamos a trabajar son:</p>
+<ul>
+<li>Porcentaje</li>
+<li>em</li>
+<li>rem</li>
+</ul>
+<h2 id="media-queries">Media Queries</h2>
               
             </div>
           </div><footer>
@@ -134,5 +135,5 @@ docs/
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2022-12-13 10:24:38.912948+00:00
+Build Date UTC : 2022-12-13 16:43:06.141622+00:00
 -->
